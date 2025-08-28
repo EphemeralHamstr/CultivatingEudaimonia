@@ -1,0 +1,49 @@
+/* Load Tekitou Poem font */
+@font-face {
+  font-family: 'TekitouPoem';
+  src: url('Fonts/TekitouPoem.woff2') format('woff2'),
+       url('Fonts/TekitouPoem.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Use the font */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'TekitouPoem', sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  text-align: center;
+}
+
+/* Layout styling */
+header {
+  background: #4CAF50;
+  color: white;
+  padding: 2rem;
+}
+
+main {
+  padding: 2rem;
+}
+
+h1, h2 {
+  margin: 0.5em 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 0.5em 0;
+  font-size: 1.2em;
+}
+
+footer {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #eee;
+}
