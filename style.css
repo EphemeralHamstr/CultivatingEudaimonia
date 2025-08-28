@@ -22,10 +22,19 @@ body {
 }
 
 /* Layout styling */
+/* Header styling */
 header {
-  background: #4CAF50;
-  color: white;
-  padding: 2rem;
+  padding: 2rem 1rem; /* space around content */
+  
+}
+
+/* Title image */
+.site-title {
+  width: 400px; /* adjust as needed */
+  max-width: 90%; /* responsive on smaller screens */
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem auto; /* center and add spacing below */
 }
 
 main {
