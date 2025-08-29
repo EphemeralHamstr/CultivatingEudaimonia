@@ -43,6 +43,7 @@ main {
 
 h1, h2 {
   margin: 0.5em 0;
+  font-size: 3rem;
 }
 
 ul {
@@ -52,6 +53,7 @@ ul {
 
 li {
   margin: 0.5em 0;
+  /* Controls font size of text beneath headers */
   font-size: 1.5em;
 }
 
