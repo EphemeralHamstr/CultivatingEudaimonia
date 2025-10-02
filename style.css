@@ -121,9 +121,9 @@ footer {
 }
 
 .carousel-images img {
-  width: auto; 
-  width: 100%;
-  flex-shrink: 0;
+  flex: 0 0 100%;   /* each image is exactly 100% of the container */
+  width: 100%;      /* ensures it scales responsively */
+  object-fit: cover; /* optional, keeps aspect ratio without stretching */
 }
 
 .arrow {
