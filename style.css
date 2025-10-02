@@ -29,11 +29,14 @@ p {
 /* ===== Mobile wrapper adjustments ===== */
 @media (max-width: 600px) {
   .parchment-wrapper {
-    width: 100%;             /* fill viewport width */
-    min-height: 100vh;       /* fill viewport height */
-    background-color: #EDD273; /* matches parchment */
-    overflow-x: hidden;      /* hides tiny horizontal gaps/lines */
-    padding: 2rem 0;         /* optional spacing */
+     width: 100%;             
+    min-height: 100vh;       
+    background-color: #EDD273; 
+    overflow-x: hidden;      
+    display: flex;            /* needed to center parchment */
+    justify-content: center;  /* horizontal centering */
+    align-items: flex-start;  /* top alignment; can be center if you want vertically centered */
+    padding: 2rem 0;         
     box-sizing: border-box;
 }
 /* ======= Parchment centered panel ======= */
