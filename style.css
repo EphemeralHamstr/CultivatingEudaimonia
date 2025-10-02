@@ -49,6 +49,18 @@ p {
   /* Prevent the background from bleeding underneath the border-image */
   background-clip: padding-box;
 
+  /* ===== Mobile adjustments ===== */
+@media (max-width: 600px) {
+  .parchment {
+    /* smaller border for narrow screens */
+    border-width: 40px;
+
+    -webkit-border-image: url('Images/Parchment.png') 40 fill stretch;
+    border-image: url('Images/Parchment.png') 40 fill stretch;
+
+    /* reduce padding proportionally */
+    padding: 1.5rem;
+
  
 }
 
