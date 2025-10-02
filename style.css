@@ -32,10 +32,10 @@ p {
   max-width: 1000px;        /* adjust width as you prefer */
   margin: 2rem auto;        /* centers and gives space from header/footer */
   padding: 2.5rem;          /* inner spacing so text doesn't touch the torn edge */
-  /*box-sizing: border-box;
+  box-sizing: border-box;
 
   /* Reserve border area for the torn edges */
-  border: 70px solid transparent;   /* adjust 70px to match your image edge thickness */
+/*  border: 70px solid transparent;   /* adjust 70px to match your image edge thickness */
  
   /* The parchment image used as a frame (edges + optional middle) */
   -webkit-border-image: url('Images/Parchment.png') 70 fill stretch;
