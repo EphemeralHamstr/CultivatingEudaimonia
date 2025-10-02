@@ -117,9 +117,11 @@ footer {
 .carousel-images {
   display: flex;
   transition: transform 0.5s ease-in-out;
+  overflow-x: hidden;
 }
 
 .carousel-images img {
+  width: auto; 
   width: 100%;
   flex-shrink: 0;
 }
