@@ -75,15 +75,16 @@ p {
   /* ===== Mobile: wrapper shows background image ===== */
 
   .parchment-wrapper {    
-  width: 100%;             /* 100% instead of 100vw avoids horizontal scroll issues */
-  background-color: #EDD273; /* matches parchment */
-  height: auto;                /* wrapper height matches content */
-    min-height: auto;            /* remove full-screen default */
+  width: auto;               /* shrink to parchment width */
+    height: auto;              /* shrink to parchment height */
+    min-width: 0;              /* remove any minimum constraints */
+    min-height: 0;
     display: flex;
-  justify-content: center;
-  padding: 2rem 0;         /* optional top/bottom spacing */
-  box-sizing: border-box;  /* ensures padding doesn’t add extra width */
-  overflow-x: hidden;      /* prevents horizontal scroll lines on mobile */
+    justify-content: center;   /* centers parchment horizontally */
+    align-items: flex-start;   /* top-align parchment */
+    padding: 0;                /* optional spacing */
+    box-sizing: border-box;
+    background-color: #EDD273; /* solid color behind parchment *
 
     
 }
