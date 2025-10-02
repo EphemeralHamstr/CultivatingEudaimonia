@@ -21,8 +21,36 @@ body {
   text-align: center;
 }
 
+
 p {
   font-size: 1.3em; /* 1.2em = 18px, or 120% */
+}
+
+/* ======= Parchment centered panel ======= */
+.parchment {
+  width: 90%;
+  max-width: 1000px;        /* adjust width as you prefer */
+  margin: 2rem auto;        /* centers and gives space from header/footer */
+  padding: 2.5rem;          /* inner spacing so text doesn't touch the torn edge */
+  box-sizing: border-box;
+
+  /* Reserve border area for the torn edges */
+  border: 70px solid transparent;   /* adjust 70px to match your image edge thickness */
+
+  /* The parchment image used as a frame (edges + optional middle) */
+  -webkit-border-image: url('Images/Parchment.png') 70 fill stretch;
+  border-image: url('Images/Parchment.png') 70 fill stretch;
+  border-image-repeat: stretch;
+
+  /* If you want a readable center regardless of the image:
+     you can use a slightly opaque background color. */
+  background-color: rgba(248,241,220,0.95);
+
+  /* Prevent the background from bleeding underneath the border-image */
+  background-clip: padding-box;
+
+  /* optional shadow for depth */
+  box-shadow: 0 12px 30px rgba(0,0,0,0.18);
 }
 
 /* Layout styling */
