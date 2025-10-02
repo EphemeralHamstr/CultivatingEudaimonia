@@ -36,7 +36,10 @@ p {
 
   /* Reserve border area for the torn edges */
   border: 70px solid transparent;   /* adjust 70px to match your image edge thickness */
-
+ background-image: url('Images/Parchment.png');
+background-size: 100% 100%;
+background-repeat: no-repeat;
+background-position: center;
   /* The parchment image used as a frame (edges + optional middle) */
 /*  -webkit-border-image: url('Images/Parchment.png') 70 fill stretch;
   border-image: url('Images/Parchment.png') 70 fill stretch;
