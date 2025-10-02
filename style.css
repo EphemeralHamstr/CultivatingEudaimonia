@@ -26,6 +26,14 @@ p {
   font-size: 1.3em; /* 1.2em = 18px, or 120% */
 }
 
+.parchment-wrapper {
+  width: 100vw;
+  min-height: 100vh;      /* fill full viewport */
+  background-color: #EDD273; /* matches parchment */
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;        /* optional spacing for top/bottom */
+}
 /* ======= Parchment centered panel ======= */
 
 .parchment {
@@ -75,11 +83,7 @@ p {
     padding: 4%; /* keeps text away from the edges */
 
     /* Optional fallback color while image loads */
-    background-color: #EDD273;
-    transform: translateZ(0);
-    overflow-x: hidden;
-
-    
+    background-color: transparent;       
     
 
   }
