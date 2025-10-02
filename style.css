@@ -71,38 +71,38 @@ p {
 /* ===== Mobile adjustments ===== */
 @media (max-width: 600px) {
 
-  /* Wrapper: solid color fills mobile screen */
-  .parchment-wrapper {    
+  /* Wrapper fills mobile viewport with solid color */
+  .parchment-wrapper {
     width: 100%;
-    min-height: 100vh;
+    min-height: 100vh;           /* full viewport height */
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    padding: 0;                /* remove extra spacing for full coverage */
+    align-items: flex-start;      /* adjust if needed */
+    padding: 0;                   /* optional spacing */
     box-sizing: border-box;
-    overflow-x: hidden;
-    background-color: #EDD273; /* solid background color visible behind parchment */
+    overflow-x: hidden;           /* prevent horizontal lines */
+    background-color: #EDD273;    /* solid color visible behind parchment */
   }
 
-  /* Parchment panel: keep torn edges but don't stretch the image */
+  /* Parchment panel remains centered, small image */
   .parchment {
     width: 90%;
     max-width: 1000px;
-    min-height: 200px;
-    padding: 4%;
-    box-sizing: border-box;
+    min-height: 200px;           /* ensure it has some height */
+    padding: 4%;                 /* text spacing from edges */
+    margin: 2rem auto;
 
+    /* Keep the torn edge border image */
     border: 70px solid transparent;
     -webkit-border-image: url('Images/Parchment.png') 70 fill stretch;
     border-image: url('Images/Parchment.png') 70 fill stretch;
     border-image-repeat: stretch;
 
-    /* Keep the parchment image small, centered */
+    /* Small parchment inside panel */
     background-image: url('Images/Parchment.png');
-    background-size: auto;        /* don’t stretch; preserves edges */
+    background-size: auto;        /* keep small, don’t stretch */
     background-repeat: no-repeat;
     background-position: center;
-
     background-color: transparent; /* wrapper color shows behind */
   }
 }
