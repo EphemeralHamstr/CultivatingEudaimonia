@@ -75,7 +75,7 @@ p {
     padding: 4%; /* keeps text away from the edges */
 
     /* Optional fallback color while image loads */
-    background-color: transparent;
+    background-color: #fdf5e6;
     transform: translateZ(0);
 
     
