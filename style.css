@@ -75,13 +75,10 @@ p {
   /* ===== Mobile: wrapper shows background image ===== */
 
   .parchment-wrapper {    
-  display: inline-flex;       /* shrink to content */
-    flex-direction: column;     /* if multiple items inside */
-    justify-content: flex-start; 
-    align-items: center;        /* center parchment horizontally */
-    padding: 0;                 /* optional spacing */
+  display: block;          /* natural block sizing */
+    padding: 0;              /* optional spacing around parchment */
+    background-color: #EDD273; /* color behind parchment */
     box-sizing: border-box;
-    background-color: #EDD273;  /* color behind parchment */
 
     
 }
