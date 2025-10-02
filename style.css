@@ -48,9 +48,7 @@ p {
 
   /* Prevent the background from bleeding underneath the border-image */
   background-clip: padding-box;
-
-  /* optional shadow for depth */
-  box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+  
 }
 
 /* Layout styling */
