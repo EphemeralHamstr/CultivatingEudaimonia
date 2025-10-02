@@ -70,6 +70,8 @@ p {
     display: block;
     overflow: hidden;
 
+    margin: -1px;
+
   }
  
 }
