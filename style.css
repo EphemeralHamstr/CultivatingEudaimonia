@@ -38,7 +38,7 @@ p {
   border: 70px solid transparent;   /* adjust 70px to match your image edge thickness */
 
   /* The parchment image used as a frame (edges + optional middle) */
-  -webkit-border-image: url('Images/Parchment.png') 70 fill stretch;
+/*  -webkit-border-image: url('Images/Parchment.png') 70 fill stretch;
   border-image: url('Images/Parchment.png') 70 fill stretch;
   border-image-repeat: stretch;
 
