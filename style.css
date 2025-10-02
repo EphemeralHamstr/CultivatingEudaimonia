@@ -57,9 +57,15 @@ p {
   .parchment {
     
     /* Remove border completely */
+    /* Absolutely nuke the border */
     border: none !important;
+    border-width: 0 !important;
     border-image: none !important;
     -webkit-border-image: none !important;
+
+    /* Reset clipping so background covers entire box */
+    background-clip: border-box !important;
+    box-shadow: none; /* just in case */
     
 
     /* Use full parchment as background */
