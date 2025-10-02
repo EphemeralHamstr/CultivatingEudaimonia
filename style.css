@@ -91,7 +91,7 @@ p {
 
     /* Set the background to the parchment image */
     background-image: url('Images/Parchment.png') !important;
-    background-size: 115% 115%;           /* stretch to fill the container */
+    background-size: 101% 101%;           /* stretch to fill the container */
     background-repeat: no-repeat;
     background-position: center;
 
