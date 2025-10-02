@@ -70,6 +70,18 @@ p {
 
 @media (max-width: 600px) {
 
+  /* ===== Mobile: wrapper shows background image ===== */
+
+  .parchment-wrapper {    
+  width: 100%;             /* 100% instead of 100vw avoids horizontal scroll issues */
+  min-height: 100vh;       /* fill full viewport height */
+  background-color: #EDD273; /* matches parchment */
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;         /* optional top/bottom spacing */
+  box-sizing: border-box;  /* ensures padding doesn’t add extra width */
+  overflow-x: hidden;      /* prevents horizontal scroll lines on mobile */
+}
   
   .parchment {
     
@@ -91,18 +103,7 @@ p {
 
   }
 
-  /* ===== Mobile: wrapper shows background image ===== */
 
-  .parchment-wrapper {    
-  width: 100%;             /* 100% instead of 100vw avoids horizontal scroll issues */
-  min-height: 100vh;       /* fill full viewport height */
-  background-color: #EDD273; /* matches parchment */
-  display: flex;
-  justify-content: center;
-  padding: 2rem 0;         /* optional top/bottom spacing */
-  box-sizing: border-box;  /* ensures padding doesn’t add extra width */
-  overflow-x: hidden;      /* prevents horizontal scroll lines on mobile */
-}
  
 }
 
