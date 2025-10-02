@@ -51,12 +51,13 @@ p {
 
   /* ===== Mobile adjustments ===== */
 /* Use stretch without fill */
-  -webkit-border-image: url('Images/Parchment.png') 70 stretch;
-  border-image: url('Images/Parchment.png') 70 stretch;
-  border-image-repeat: stretch;
+@media (max-width: 600px) {
+  .parchment {
+    border-width: 40px;
+    -webkit-border-image: url('Images/Parchment.png') 40 stretch;
+    border-image: url('Images/Parchment.png') 40 stretch;
+    padding: 1.5rem; /* reduce inner padding for small screens */
 
-  background-color: transparent;
-  background-clip: padding-box;
 
  
 }
