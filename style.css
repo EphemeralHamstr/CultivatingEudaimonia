@@ -48,6 +48,7 @@ p {
 
   /* Prevent the background from bleeding underneath the border-image */
   background-clip: padding-box;
+}
 
   /* ===== Mobile adjustments ===== */
 /* Use stretch without fill */
@@ -58,7 +59,7 @@ p {
     border-image: url('Images/Parchment.png') 40 stretch;
     padding: 1.5rem; /* reduce inner padding for small screens */
 
-  }
+  
  
 }
 
