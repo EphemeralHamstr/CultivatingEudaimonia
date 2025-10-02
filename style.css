@@ -26,15 +26,15 @@ p {
   font-size: 1.3em; /* 1.2em = 18px, or 120% */
 }
 
-.parchment-wrapper {
-  width: 100%;             /* 100% instead of 100vw avoids horizontal scroll issues */
-  min-height: 100vh;       /* fill full viewport height */
-  background-color: #EDD273; /* matches parchment */
-  display: flex;
-  justify-content: center;
-  padding: 2rem 0;         /* optional top/bottom spacing */
-  box-sizing: border-box;  /* ensures padding doesn’t add extra width */
-  overflow-x: hidden;      /* prevents horizontal scroll lines on mobile */
+/* ===== Mobile wrapper adjustments ===== */
+@media (max-width: 600px) {
+  .parchment-wrapper {
+    width: 100%;             /* fill viewport width */
+    min-height: 100vh;       /* fill viewport height */
+    background-color: #EDD273; /* matches parchment */
+    overflow-x: hidden;      /* hides tiny horizontal gaps/lines */
+    padding: 2rem 0;         /* optional spacing */
+    box-sizing: border-box;
 }
 /* ======= Parchment centered panel ======= */
 
