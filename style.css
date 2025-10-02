@@ -56,26 +56,25 @@ p {
 @media (max-width: 600px) {
   .parchment {
     
-    /* Remove border completely */
-    /* Absolutely nuke the border */   
+    /* Kill border-image completely */
     border: none !important;
-    border-width: 0 !important;
     border-image: none !important;
     -webkit-border-image: none !important;
 
-    /* Reset any border-image fill from desktop */
-    background: none !important;
-    background-clip: border-box !important;
-    
-    /* Use full parchment as background */
+    /* Use the full torn parchment image */
     background-image: url('Images/Parchment.png');
-    background-size: 100% 100%;
+    background-size: contain;   /* keep proportions of torn image */
     background-repeat: no-repeat;
     background-position: center;
 
-    /* Optional inner padding for text */
-    /* Padding to keep text away from top, bottom, and right */
-    padding: 4%;
+    /* Make the box hug the image instead of stretching */
+    width: 100%;
+    max-width: 600px;   /* or whatever fits your PNG */
+    min-height: auto;   /* so it grows with content */
+
+    /* Keep text inside the edges */
+    padding: 10%; /* adjust until text never touches torn edges */
+    
 
     
    
