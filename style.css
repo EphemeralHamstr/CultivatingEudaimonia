@@ -26,19 +26,23 @@ p {
   font-size: 1.3em; /* 1.2em = 18px, or 120% */
 }
 
-/* ===== Mobile wrapper adjustments ===== */
+/* ===== Mobile: wrapper shows background image ===== */
 @media (max-width: 600px) {
   .parchment-wrapper {
-     width: 100%;             
-    min-height: 100vh;       
-    background-color: #EDD273; 
-    overflow-x: hidden;      
-    display: flex;            /* needed to center parchment */
-    justify-content: center;  /* horizontal centering */
-    align-items: flex-start;  /* top alignment; can be center if you want vertically centered */
-    padding: 2rem 0;         
+    width: 100%;
+    min-height: 100vh;              /* fill viewport */
+    background-color: #EDD273;      /* fallback color */
+    background-image: url('Images/Parchment.png');
+    background-size: cover;          /* fill wrapper */
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem 0;
     box-sizing: border-box;
-}
+  }
 /* ======= Parchment centered panel ======= */
 
 .parchment {
