@@ -75,16 +75,13 @@ p {
   /* ===== Mobile: wrapper shows background image ===== */
 
   .parchment-wrapper {    
-  width: auto;               /* shrink to parchment width */
-    height: auto;              /* shrink to parchment height */
-    min-width: 0;              /* remove any minimum constraints */
-    min-height: 0;
-    display: flex;
-    justify-content: center;   /* centers parchment horizontally */
-    align-items: flex-start;   /* top-align parchment */
-    padding: 0;                /* optional spacing */
+  display: inline-flex;       /* shrink to content */
+    flex-direction: column;     /* if multiple items inside */
+    justify-content: flex-start; 
+    align-items: center;        /* center parchment horizontally */
+    padding: 0;                 /* optional spacing */
     box-sizing: border-box;
-    background-color: #EDD273; /* solid color behind parchment *
+    background-color: #EDD273;  /* color behind parchment */
 
     
 }
