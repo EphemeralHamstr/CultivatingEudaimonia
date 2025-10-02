@@ -71,7 +71,10 @@ p {
     padding-bottom: 2rem;
     padding-right: 2rem;
     padding-left: 2rem; /* optional, you can reduce left if you want text closer */
+
+    box-sizing: border-box;
    /* padding: 1.5rem;
+    
 
   }
  
