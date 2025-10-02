@@ -27,6 +27,8 @@ p {
 }
 
 /* ======= Parchment centered panel ======= */
+.parchment {
+
 width: 90%;
   max-width: 1000px;        /* adjust width as you prefer */
   margin: 2rem auto;        /* centers and gives space from header/footer */
