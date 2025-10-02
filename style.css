@@ -50,16 +50,13 @@ p {
   background-clip: padding-box;
 
   /* ===== Mobile adjustments ===== */
-@media (max-width: 600px) {
-  .parchment {
-    /* smaller border for narrow screens */
-    border-width: 40px;
+/* Use stretch without fill */
+  -webkit-border-image: url('Images/Parchment.png') 70 stretch;
+  border-image: url('Images/Parchment.png') 70 stretch;
+  border-image-repeat: stretch;
 
-    -webkit-border-image: url('Images/Parchment.png') 40 fill stretch;
-    border-image: url('Images/Parchment.png') 40 fill stretch;
-
-    /* reduce padding proportionally */
-    padding: 1.5rem;
+  background-color: transparent;
+  background-clip: padding-box;
 
  
 }
