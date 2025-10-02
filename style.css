@@ -54,14 +54,25 @@ p {
 /* Use stretch without fill */
 @media (max-width: 600px) {
   .parchment {
-    border: none;  /* remove border-image completely */
-    padding: 1.5rem;
+    /* Remove border-image completely */
+    border: 0;
+    padding: 1.5rem; /* inner spacing */
 
-    /* Stretch full parchment image */
+    /* Stretch the full parchment image */
     background-image: url('Images/Parchment.png');
     background-repeat: no-repeat;
-    background-size: cover;   /* stretches the whole image */
+
+    /* Force the image to fully cover the div */
+    background-size: calc(100% + 2px) calc(100% + 2px); /* slightly oversize to hide seams */
     background-position: center;
+    background-clip: border-box;
+
+    /* Prevent subpixel gaps */
+    display: block;
+    overflow: hidden;
+
+    /* Optional: slight negative margin if line persists */
+    margin: -1px;
 
   }
  
