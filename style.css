@@ -36,12 +36,9 @@ p {
 
   /* Reserve border area for the torn edges */
   border: 70px solid transparent;   /* adjust 70px to match your image edge thickness */
- background-image: url('Images/Parchment.png');
-background-size: 100% 100%;
-background-repeat: no-repeat;
-background-position: center;
+ 
   /* The parchment image used as a frame (edges + optional middle) */
-/*  -webkit-border-image: url('Images/Parchment.png') 70 fill stretch;
+  -webkit-border-image: url('Images/Parchment.png') 70 fill stretch;
   border-image: url('Images/Parchment.png') 70 fill stretch;
   border-image-repeat: stretch;
 
@@ -59,23 +56,17 @@ background-position: center;
   .parchment {
     /* Remove border-image completely */
     border: 0;
-    padding: 1.5rem; /* inner spacing */
+    -webkit-border-image: none;
+    border-image: none;
 
-    /* Stretch the full parchment image */
+    /* Use full parchment as background */
     background-image: url('Images/Parchment.png');
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-
-    /* Force the image to fully cover the div */
-    background-size: calc(100% + 2px) calc(100% + 2px); /* slightly oversize to hide seams */
     background-position: center;
-    background-clip: border-box;
 
-    /* Prevent subpixel gaps */
-    display: block;
-    overflow: hidden;
-
-    /* Optional: slight negative margin if line persists */
-    margin: -1px;
+    /* Optional inner padding for text */
+    padding: 1.5rem;
 
   }
  
