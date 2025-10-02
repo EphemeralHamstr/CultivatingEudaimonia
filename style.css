@@ -68,43 +68,43 @@ p {
   /* ===== Mobile adjustments ===== */
 /* Use stretch without fill */
 
+/* ===== Mobile adjustments ===== */
 @media (max-width: 600px) {
 
-  /* ===== Mobile: wrapper shows background image ===== */
-
+  /* Wrapper: solid color fills mobile screen */
   .parchment-wrapper {    
-  width: 100%;             /* 100% instead of 100vw avoids horizontal scroll issues */
-  min-height: 100vh;       /* fill full viewport height */
-  background-color: #EDD273; /* matches parchment */
-  display: flex;
-  justify-content: center;
-  padding: 2rem 0;         /* optional top/bottom spacing */
-  box-sizing: border-box;  /* ensures padding doesn’t add extra width */
-  overflow-x: hidden;      /* prevents horizontal scroll lines on mobile */
-}
-  
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;                /* remove extra spacing for full coverage */
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background-color: #EDD273; /* solid background color visible behind parchment */
+  }
+
+  /* Parchment panel: keep torn edges but don't stretch the image */
   .parchment {
-    
-    /* Set the background to the parchment image */
-    background-image: url('Images/Parchment.png') !important;
-    background-size: 101% 101%;           /* stretch to fill the container */
+    width: 90%;
+    max-width: 1000px;
+    min-height: 200px;
+    padding: 4%;
+    box-sizing: border-box;
+
+    border: 70px solid transparent;
+    -webkit-border-image: url('Images/Parchment.png') 70 fill stretch;
+    border-image: url('Images/Parchment.png') 70 fill stretch;
+    border-image-repeat: stretch;
+
+    /* Keep the parchment image small, centered */
+    background-image: url('Images/Parchment.png');
+    background-size: auto;        /* don’t stretch; preserves edges */
     background-repeat: no-repeat;
     background-position: center;
 
-    /* Ensure the container has some minimum height so the background shows */
-    min-height: 200px; /* adjust as needed */
-
-    /* Inner text spacing */
-    padding: 4%; /* keeps text away from the edges */
-
-    /* Optional fallback color while image loads */
-    background-color: transparent;       
-    
-
+    background-color: transparent; /* wrapper color shows behind */
   }
-
-
- 
 }
 
 /* Layout styling */
