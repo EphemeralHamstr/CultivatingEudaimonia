@@ -67,10 +67,7 @@ p {
 
     /* Optional inner padding for text */
     /* Padding to keep text away from top, bottom, and right */
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    padding-right: 2rem;
-    padding-left: 2rem; /* optional, you can reduce left if you want text closer */
+    padding: 5%;
 
     
    /* padding: 1.5rem;
