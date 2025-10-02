@@ -56,24 +56,24 @@ p {
 @media (max-width: 600px) {
   .parchment {
     
-    /* Kill border-image completely */
     border: none !important;
     border-image: none !important;
     -webkit-border-image: none !important;
 
-    /* Use the full torn parchment image */
+    /* Full torn parchment image */
     background-image: url('Images/Parchment.png');
-    background-size: contain;   /* keep proportions of torn image */
+    background-size: contain;     /* scale until one side touches */
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center;  /* center with empty space */
+    
+    /* Keep aspect ratio of the parchment */
+    aspect-ratio: 4 / 3;   /* adjust this to match your PNG's ratio */
+    width: 100%;           /* scale to screen width */
+    max-width: 600px;
 
-    /* Make the box hug the image instead of stretching */
-    width: 100%;
-    max-width: 600px;   /* or whatever fits your PNG */
-    min-height: auto;   /* so it grows with content */
-
-    /* Keep text inside the edges */
-    padding: 10%; /* adjust until text never touches torn edges */
+    /* Inner text spacing */
+    padding: 4%; /* keep text away from torn edges */
+    
     
 
     
