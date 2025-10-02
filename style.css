@@ -76,9 +76,7 @@ p {
 
     /* Optional fallback color while image loads */
     background-color: transparent;
-
-
-  
+    transform: translateZ(0);
 
     
     
