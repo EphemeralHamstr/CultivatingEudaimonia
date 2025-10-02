@@ -41,21 +41,16 @@ p {
 }
 /* ===== Mobile: wrapper shows background image ===== */
 @media (max-width: 600px) {
-  .parchment-wrapper {
-    width: 100%;
-    min-height: 100vh;              /* fill viewport */
-    background-color: #EDD273;      /* fallback color */
-    background-image: url('Images/Parchment.png');
-    background-size: cover;          /* fill wrapper */
-    background-repeat: no-repeat;
-    background-position: center;
-    overflow-x: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 2rem 0;
-    box-sizing: border-box;
-  }
+  .parchment-wrapper {    
+  width: 100%;             /* 100% instead of 100vw avoids horizontal scroll issues */
+  min-height: 100vh;       /* fill full viewport height */
+  background-color: #EDD273; /* matches parchment */
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;         /* optional top/bottom spacing */
+  box-sizing: border-box;  /* ensures padding doesn’t add extra width */
+  overflow-x: hidden;      /* prevents horizontal scroll lines on mobile */
+}
 /* ======= Parchment centered panel ======= */
 
 .parchment {
