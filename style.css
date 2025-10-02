@@ -61,10 +61,10 @@ p {
   }
 
   .parchment-bg {
-    background-image: url('Images/ParchmentSecond.png');
-    background-size: contain; /* or 100% auto */
+    background-image: url('Images/Parchment.png');
+    background-size: 100% auto;   /* stretch width, height auto */
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center top;
     padding: 4%; /* inner spacing so text doesn’t touch edges */
     box-sizing: border-box;
   
