@@ -26,6 +26,19 @@ p {
   font-size: 1.3em; /* 1.2em = 18px, or 120% */
 }
 
+.parchment-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;  /* adjust if you want vertical centering */
+  padding: 2rem 0;
+  box-sizing: border-box;
+
+  /* No background on desktop */
+  background-color: transparent;
+  background-image: none;
+}
 /* ===== Mobile: wrapper shows background image ===== */
 @media (max-width: 600px) {
   .parchment-wrapper {
