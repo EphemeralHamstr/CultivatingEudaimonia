@@ -36,7 +36,7 @@ p {
   box-sizing: border-box;
 
   /* No background on desktop */
-  background-color: transparent;
+/*  background-color: transparent;*/
   background-image: none;
 }
 
@@ -71,40 +71,38 @@ p {
 /* ===== Mobile adjustments ===== */
 @media (max-width: 600px) {
 
-  /* Wrapper fills mobile viewport with solid color */
-  .parchment-wrapper {
-    width: 100%;
-    min-height: 100vh;           /* full viewport height */
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;      /* adjust if needed */
-    padding: 0;                   /* optional spacing */
-    box-sizing: border-box;
-    overflow-x: hidden;           /* prevent horizontal lines */
-    background-color: #EDD273;    /* solid color visible behind parchment */
-  }
+  /* ===== Mobile: wrapper shows background image ===== */
 
-  /* Parchment panel remains centered, small image */
+  .parchment-wrapper {    
+  width: 100%;             /* 100% instead of 100vw avoids horizontal scroll issues */
+  min-height: 100vh;       /* fill full viewport height */
+  background-color: #EDD273; /* matches parchment */
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;         /* optional top/bottom spacing */
+  box-sizing: border-box;  /* ensures padding doesn’t add extra width */
+  overflow-x: hidden;      /* prevents horizontal scroll lines on mobile */
+}
+  
   .parchment {
-    width: 90%;
-    max-width: 1000px;
-    min-height: 200px;           /* ensure it has some height */
-    padding: 4%;                 /* text spacing from edges */
-    margin: 2rem auto;
-
-    /* Keep the torn edge border image */
-    border: 70px solid transparent;
-    -webkit-border-image: url('Images/Parchment.png') 70 fill stretch;
-    border-image: url('Images/Parchment.png') 70 fill stretch;
-    border-image-repeat: stretch;
-
-    /* Small parchment inside panel */
-    background-image: url('Images/Parchment.png');
-    background-size: auto;        /* keep small, don’t stretch */
+    
+    /* Set the background to the parchment image */
+    background-image: url('Images/Parchment.png') !important;
+    background-size: 101% 101%;           /* stretch to fill the container */
     background-repeat: no-repeat;
     background-position: center;
-    background-color: transparent; /* wrapper color shows behind */
-  }
+
+    /* Ensure the container has some minimum height so the background shows */
+    min-height: 200px; /* adjust as needed */
+
+    /* Inner text spacing */
+    padding: 4%; /* keeps text away from the edges */
+
+    /* Optional fallback color while image loads */
+    background-color: transparent;       
+    
+
+  } 
 }
 
 /* Layout styling */
