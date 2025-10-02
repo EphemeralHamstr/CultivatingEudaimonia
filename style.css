@@ -60,7 +60,7 @@ p {
     border: none !important;
     border-image: none !important;
     -webkit-border-image: none !important;
-    background-clip: border-box; /* reset so background fills entire box */
+    
 
     /* Use full parchment as background */
     background-image: url('Images/Parchment.png');
