@@ -35,7 +35,7 @@ p {
   box-sizing: border-box;
 
   /* Reserve border area for the torn edges */
-/*  border: 70px solid transparent;   /* adjust 70px to match your image edge thickness */
+  border: 70px solid transparent;   /* adjust 70px to match your image edge thickness */
  
   /* The parchment image used as a frame (edges + optional middle) */
   -webkit-border-image: url('Images/Parchment.png') 70 fill stretch;
@@ -57,17 +57,16 @@ p {
   .parchment {
     
     /* Remove border completely */
-    /* Absolutely nuke the border */
+    /* Absolutely nuke the border */   
     border: none !important;
     border-width: 0 !important;
     border-image: none !important;
     -webkit-border-image: none !important;
 
-    /* Reset clipping so background covers entire box */
+    /* Reset any border-image fill from desktop */
+    background: none !important;
     background-clip: border-box !important;
-    box-shadow: none; /* just in case */
     
-
     /* Use full parchment as background */
     background-image: url('Images/Parchment.png');
     background-size: 100% 100%;
