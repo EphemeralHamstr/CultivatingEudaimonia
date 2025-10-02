@@ -44,7 +44,7 @@ p {
 
   /* If you want a readable center regardless of the image:
      you can use a slightly opaque background color. */
-  background-color: rgba(248,241,220,0.95);
+  background-color: transparent;
 
   /* Prevent the background from bleeding underneath the border-image */
   background-clip: padding-box;
