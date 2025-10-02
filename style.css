@@ -27,46 +27,48 @@ p {
 }
 
 /* ======= Parchment centered panel ======= */
-/* ===== Desktop (larger than 600px) ===== */
-@media (min-width: 601px) {
-  .parchment {
-    width: 90%;
-    max-width: 1000px;
-    margin: 2rem auto;
-    box-sizing: border-box;
+width: 90%;
+  max-width: 1000px;        /* adjust width as you prefer */
+  margin: 2rem auto;        /* centers and gives space from header/footer */
+  padding: 2.5rem;          /* inner spacing so text doesn't touch the torn edge */
+  box-sizing: border-box;
 
-    border: 70px solid transparent;
-    -webkit-border-image: url('Images/Parchment.png') 70 fill stretch;
-    border-image: url('Images/Parchment.png') 70 fill stretch;
-    border-image-repeat: stretch;
+  /* Reserve border area for the torn edges */
+  border: 70px solid transparent;   /* adjust 70px to match your image edge thickness */
+ 
+  /* The parchment image used as a frame (edges + optional middle) */
+  -webkit-border-image: url('Images/Parchment.png') 70 fill stretch;
+  border-image: url('Images/Parchment.png') 70 fill stretch;
+  border-image-repeat: stretch;
 
-    padding: 2.5rem; /* spacing inside the border */
-    background-color: transparent;
-  }
+  /* If you want a readable center regardless of the image:
+     you can use a slightly opaque background color. */
+  background-color: transparent;
 
-  .parchment-bg {
-    background: none;
-    padding: 0;
-  }
+  /* Prevent the background from bleeding underneath the border-image */
+  background-clip: padding-box;
 }
 
-/* ===== Mobile (600px and below) ===== */
+  /* ===== Mobile adjustments ===== */
+/* Use stretch without fill */
+
 @media (max-width: 600px) {
   .parchment {
-    width: 90%;
-    margin: 2rem auto;
-    border: none;
-    padding: 0;
-    box-sizing: border-box;
-  }
+    /* Remove border-image completely */
+    border: 0;
+    -webkit-border-image: none;
+    border-image: none;
 
-  .parchment-bg {
+    /* Use full parchment as background */
     background-image: url('Images/Parchment.png');
-    background-size: 100% auto;   /* stretch width, height auto */
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-position: center top;
-    padding: 4%; /* inner spacing so text doesn’t touch edges */
-    
+    background-position: center;
+
+    /* Optional inner padding for text */
+    /* Padding to keep text away from top, bottom, and right */
+    padding: 4%;
+
   
 
     
