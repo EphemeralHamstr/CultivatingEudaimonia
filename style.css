@@ -72,12 +72,7 @@ p {
 
   
   .parchment {
-    /* Remove border and any border-image remnants */
-    border: 0 !important;
-    border-width: 0 !important;
-    border-image: none !important;
-    -webkit-border-image: none !important;
-
+    
     /* Set the background to the parchment image */
     background-image: url('Images/Parchment.png') !important;
     background-size: 101% 101%;           /* stretch to fill the container */
