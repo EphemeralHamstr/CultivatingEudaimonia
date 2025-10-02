@@ -54,13 +54,21 @@ p {
 /* Use stretch without fill */
 @media (max-width: 600px) {
   .parchment {
-    border: 0; /* ensure no border at all */
-    padding: 1.5rem; /* inner spacing */
+    border: 0; /* no border at all */
+    padding: 1.5rem;
     background-image: url('Images/Parchment.png');
     background-repeat: no-repeat;
-    background-size: 100% 100%; /* stretch to full width & height */
+
+    /* Stretch image to cover entire element */
+    background-size: cover; /* or 100% 100% if you need exact fit */
     background-position: center;
-    background-clip: border-box; /* cover full div, ignore padding */
+
+    /* Clip background to border-box so it fills fully */
+    background-clip: border-box;
+
+    /* Prevent any subpixel seam */
+    display: block;
+    overflow: hidden;
 
   }
  
