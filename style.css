@@ -92,7 +92,12 @@ main {
     min-height: 100vh;          /* ensures it fills viewport at least */
   }
 
-  
+  .parchment-content {
+  padding: 2rem; /* or whatever padding you want */
+  box-sizing: border-box;
+  position: relative; /* keeps text above background */
+  z-index: 1;
+}
   
     
 
