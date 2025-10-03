@@ -61,24 +61,24 @@ p {
 @media (max-width: 600px) {
 
   .parchment {
-    position: relative; /* so pseudo-element sits behind it */
-    z-index: 1;
+    position: relative;
+  z-index: 1;
 
-    /* Parchment image stays intact */
-    background-image: url('Images/Parchment.png') !important;
-    background-size: 101% 101%;
-    background-repeat: no-repeat;
-    background-position: center;
+  /* Make the box itself fill the width */
+  width: 100vw;          /* take full viewport width */
+  max-width: 100vw;      /* prevent limiting to 1000px */
+  margin: 0;             /* remove auto-centering gaps */
+  left: 50%;
+  transform: translateX(-50%); /* ensure it always spans full width, even if centered container */
 
-    
-    
-    width: 98vw;     /* nearly full viewport width */
-    max-width: 98vw; /* ignore desktop max-width */    
-   margin: 2rem auto; /* center vertically with some space */
-    
-    min-height: 200px;
-    padding: 4%;
-    background-color: transparent;
+  /* Parchment background */
+  background-image: url('Images/ParchmentSecond.png') !important;
+  background-size: cover;   /* fully covers the box */
+  background-repeat: no-repeat;
+  background-position: center;
+
+  /* inner spacing so text isn’t flush against the edge */
+  padding: 2rem;
   }
 
   
