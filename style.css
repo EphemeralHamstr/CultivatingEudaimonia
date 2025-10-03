@@ -72,6 +72,10 @@ p {
     padding: 2rem;             /* keep text away from edges */
     box-sizing: border-box;
 
+       position: relative;
+    left: 0;
+    right: 0;
+
     background-image: url('Images/ParchmentSecond.png') !important;
      background-size: 100% auto;  /* full width, keep natural height */
     background-repeat: no-repeat; 
