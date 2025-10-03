@@ -63,7 +63,7 @@ main {
 @media (max-width: 600px) {
   
   main {
-    padding: 2;
+    padding: 0;
   }
     .parchment {
 
