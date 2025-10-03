@@ -66,7 +66,7 @@ p {
     /* Fill the viewport width without triggering zoom/scrollbar */
     width: 100%;
     max-width: 100%;
-    margin: 0 auto;  /* keep it centered */
+    margin: 0;  
 
     /* Parchment background */
     background-image: url('Images/ParchmentSecond.png') !important;
