@@ -27,7 +27,9 @@ p {
 }
 
 
-
+main {
+  padding: 2rem;
+}
 
 /* ======= Parchment centered panel ======= */
 
@@ -110,9 +112,6 @@ header {
   margin: 0 auto 1rem auto; /* center and add spacing below */
 }
 
-main {
-  padding: 2rem;
-}
 
 h1, h2 {
   margin: 0.5em 0;
