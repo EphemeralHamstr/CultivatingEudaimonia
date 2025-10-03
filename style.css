@@ -60,6 +60,9 @@ p {
 /* ===== Mobile adjustments ===== */
 @media (max-width: 600px) {
   
+  main {
+    padding: 0;
+  }
     .parchment {
 
       border: 0 !important;
