@@ -67,9 +67,11 @@ main {
   }
     .parchment {
 
-      border: 0 !important;
+     border: 0 !important;
     border-image: none !important;
     -webkit-border-image: none !important;
+    border-image-slice: 0 !important;
+    border-image-repeat: stretch !important;
       
     width: 100%;          /* use percentage, not vw */
     max-width: 100%;
