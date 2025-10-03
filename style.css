@@ -93,12 +93,14 @@ main {
   }
 
   .parchment-content {
-  position: absolute;
-  top: 4rem;       /* distance from top edge of parchment */
-  bottom: 4rem;    /* distance from bottom edge */
-  left: 2rem;      /* distance from left edge */
-  right: 2rem;     /* distance from right edge */
-  overflow: auto;  /* scrolls if content too tall */
+   position: absolute;       /* move content inside parent */
+  top: 4rem;                /* distance from top torn edge */
+  bottom: 4rem;             /* distance from bottom torn edge */
+  left: 2rem;               /* distance from left torn edge */
+  right: 2rem;              /* distance from right torn edge */
+  overflow: auto;           /* allows scrolling if needed */
+  box-sizing: border-box;
+  z-index: 1;
 }
   
     
