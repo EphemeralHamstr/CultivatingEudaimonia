@@ -27,19 +27,7 @@ p {
 }
 
 
-.parchment-wrapper {
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;  /* adjust if you want vertical centering */
-  padding: 2rem 0;
-  box-sizing: border-box;
 
-  /* No background on desktop */
-  background-color: transparent;
-  background-image: none;
-}
 
 /* ======= Parchment centered panel ======= */
 
@@ -72,34 +60,34 @@ p {
 /* ===== Mobile adjustments ===== */
 @media (max-width: 600px) {
 
-  /* ===== Mobile: wrapper shows background image ===== */
-
-  .parchment-wrapper {    
-   width: 60%;                  /* background only takes 60% of screen width */
-    background-color: #EDD273;   /* the visible background color */
-    padding: 2rem 0;             /* optional spacing */
-    margin: 0 auto;              /* center horizontally */
-    box-sizing: border-box;
-
-    
-}
-  
   .parchment {
-    
-    /* Set the background to the parchment image */
+    position: relative; /* so pseudo-element sits behind it */
+    z-index: 1;
+
+    /* Parchment image stays intact */
     background-image: url('Images/Parchment.png') !important;
-    background-size: 101% 101%;           /* stretch to fill the container */
+    background-size: 101% 101%;
     background-repeat: no-repeat;
     background-position: center;
 
-    /* Ensure the container has some minimum height so the background shows */
-    min-height: 200px; /* adjust as needed */
+    min-height: 200px;
+    padding: 4%;
+    background-color: transparent;
+  }
 
-    /* Inner text spacing */
-    padding: 4%; /* keeps text away from the edges */
-
-    /* Optional fallback color while image loads */
-    background-color: transparent;       
+  /* Colored block behind parchment */
+  .parchment::before {
+    content: "";
+    position: absolute;
+    top: 50%;               /* vertical center */
+    left: 50%;              /* horizontal center */
+    transform: translate(-50%, -50%);
+    width: 60%;             /* change this to adjust background width */
+    height: 250px;          /* change this to adjust background height */
+    background-color: #EDD273; /* background color behind parchment */
+    z-index: 0;             /* behind parchment */
+    border-radius: 10px;    /* optional rounding */
+  
     
 
   } 
