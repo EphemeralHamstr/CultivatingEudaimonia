@@ -75,11 +75,12 @@ p {
   /* ===== Mobile: wrapper shows background image ===== */
 
   .parchment-wrapper {    
-  display: block;          /* natural block sizing */
-    padding: 0;              /* optional spacing around parchment */
-    width: 60%;                    /* wrapper width = 80% of viewport */
-    background-color: #EDD273; /* color behind parchment */
+   display: inline-block;         /* wrapper only as wide as its width */
+    width: 60%;                    /* desired width of the background color */
+    background-color: #EDD273;     /* color behind parchment */
+    padding: 0;                    /* optional spacing */
     box-sizing: border-box;
+    margin: 0 auto;                /* center wrapper horizontally */
 
     
 }
