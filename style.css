@@ -75,23 +75,12 @@ p {
     background-color: transparent;
   }
 
-  /* Colored block behind parchment */
-  .parchment::before {
-    content: "";
-    position: absolute;
-    top: 50%;               /* vertical center */
-    left: 50%;              /* horizontal center */
-    transform: translate(-50%, -50%);
-    width: 80%;             /* change this to adjust background width */
-    height: 250px;          /* change this to adjust background height */
-    background-color: #EDD273; /* background color behind parchment */
-    z-index: 0;             /* behind parchment */
-    border-radius: 10px;    /* optional rounding */
+  
   
     
 
   } 
-}
+
 
 /* Layout styling */
 /* Header styling */
