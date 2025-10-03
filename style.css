@@ -94,9 +94,7 @@ main {
 
   .parchment-content {
   padding: 2rem; /* or whatever padding you want */
-  margin: 2rem;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin: 2rem;  
   box-sizing: border-box;
   position: relative; /* keeps text above background */
   z-index: 1;
