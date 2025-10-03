@@ -61,19 +61,18 @@ p {
 @media (max-width: 600px) {
   
     .parchment {
-    width: 100vw;
+    width: 100vw;              /* fill full viewport width */
     max-width: 100vw;
-    margin: 0;
-    left: 0;
-    transform: none;
+    margin: 0;                 /* remove gaps on sides */
+    padding: 2rem;             /* keep text away from edges */
+    box-sizing: border-box;
 
     background-image: url('Images/ParchmentSecond.png') !important;
-    background-size: 100% auto;   /* stretch width to fill container, keep height natural */
-    background-repeat: no-repeat;
-    background-position: top center;
+    background-size: 100% auto;  /* full width, height scales naturally */
+    background-repeat: repeat-y; /* repeat vertically to fill content length */
+    background-position: top center; /* align top, centered horizontally */
 
-    padding: 2rem;
-    min-height: 200px;
+    min-height: 100vh;          /* ensures it fills viewport at least */
   }
 
   
