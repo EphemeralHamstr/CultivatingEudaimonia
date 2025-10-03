@@ -84,7 +84,7 @@ main {
     right: 0;
 
     background-image: url('Images/ParchmentSecond.png') !important;
-     background-size: 100% 100%;  /* full width, keep natural height */
+     background-size: cover;  /* full width, keep natural height */
     background-repeat: no-repeat; 
     background-position: top center; /* align top, centered horizontally */
 
