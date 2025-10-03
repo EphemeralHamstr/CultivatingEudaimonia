@@ -101,7 +101,8 @@ main {
   overflow: auto;           /* allows scrolling if needed */
   box-sizing: border-box;
   z-index: 1;
-  
+  overflow-y: scroll;      /* forces scrollbar to always appear */
+  -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */
 }
   
     
