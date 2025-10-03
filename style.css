@@ -73,8 +73,8 @@ p {
     box-sizing: border-box;
 
     background-image: url('Images/ParchmentSecond.png') !important;
-    background-size: 100% auto;  /* full width, height scales naturally */
-    background-repeat: repeat-y; /* repeat vertically to fill content length */
+     background-size: 100% auto;  /* full width, keep natural height */
+    background-repeat: no-repeat; 
     background-position: top center; /* align top, centered horizontally */
 
     min-height: 100vh;          /* ensures it fills viewport at least */
