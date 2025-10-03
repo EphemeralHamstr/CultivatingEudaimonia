@@ -104,17 +104,7 @@ main {
   overflow-y: scroll;      /* forces scrollbar to always appear */
   -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */
 }
-
-  .scroll-arrow-side {
-  position: absolute;          /* absolute within parchment-content */
-  right: 1rem;                 /* distance from right edge of parchment */
-  top: 50%;                    /* vertical middle */
-  transform: translateY(-50%);
-  width: 30px;                 /* adjust size */
-  z-index: 2;                  /* above text and carousel */
-  opacity: 0.8;                /* subtle */
-  pointer-events: none;        /* so it doesn’t block scrolling/clicks */
-}
+ 
   
     
 
