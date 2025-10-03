@@ -72,8 +72,8 @@ p {
 
     
     
-    width: 95vw;     /* nearly full viewport width */
-    max-width: 95vw; /* ignore desktop max-width */    
+    width: 98vw;     /* nearly full viewport width */
+    max-width: 98vw; /* ignore desktop max-width */    
    margin: 2rem auto; /* center vertically with some space */
     
     min-height: 200px;
