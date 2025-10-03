@@ -59,7 +59,8 @@ p {
 
 /* ===== Mobile adjustments ===== */
 @media (max-width: 600px) {
-  .parchment {
+  
+    .parchment {
     position: relative;
     z-index: 1;
 
