@@ -77,6 +77,7 @@ p {
   .parchment-wrapper {    
   display: block;          /* natural block sizing */
     padding: 0;              /* optional spacing around parchment */
+    width: 60%;                    /* wrapper width = 80% of viewport */
     background-color: #EDD273; /* color behind parchment */
     box-sizing: border-box;
 
