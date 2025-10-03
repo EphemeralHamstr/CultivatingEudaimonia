@@ -95,7 +95,7 @@ main {
   .parchment-content {
   padding: 2rem; /* or whatever padding you want */
   padding-top: 4rem;    /* extra top spacing if needed */
-  padding-bottom: 4rem; /* extra bottom spacing if needed */
+  
   margin: 2rem;  
   
   box-sizing: border-box;
