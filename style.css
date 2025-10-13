@@ -148,8 +148,7 @@ li {
 footer {
   margin-top: 2rem;
   padding: 1rem;
-  /* BG Image */
-  background-image: url('Images/Background.png');
+  
 }
 
 /* Carousel styles */
