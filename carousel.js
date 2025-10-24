@@ -25,7 +25,7 @@ leftBtn.addEventListener('click', prevImage);
 
 // --- Autoplay handling ---
 function startAutoPlay() {
-  autoPlay = setInterval(nextImage, 3000);
+  autoPlay = setInterval(nextImage, 5000);
 }
 
 function stopAutoPlay() {
