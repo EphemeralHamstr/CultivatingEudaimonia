@@ -37,3 +37,22 @@ startAutoPlay();
 // Pause on hover
 carousel.addEventListener('mouseenter', stopAutoPlay);
 carousel.addEventListener('mouseleave', startAutoPlay);
+
+// --- Lightbox click-to-enlarge feature ---
+const lightbox = document.querySelector('.lightbox');
+const lightboxImg = document.querySelector('.lightbox-img');
+const closeBtn = document.querySelector('.lightbox .close');
+
+// Add click event to each image
+document.querySelectorAll('.carousel-images img').forEach(img => {
+  img.addEventListener('click', () => {
+    lightbox.style.display = 'flex';
+    lightboxImg.src = img.src;
+  });
+});
+
+// Close when clicking the X or outside the image
+closeBtn.addEventListener('click', () => lightbox.style.display = 'none');
+lightbox.addEventListener('click', e => {
+  if (e.target === lightbox) lightbox.style.display = 'none';
+});
