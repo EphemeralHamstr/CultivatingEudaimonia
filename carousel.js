@@ -1,4 +1,5 @@
 const images = document.querySelector('.carousel-images');
+const imageElements = document.querySelectorAll('.carousel-images img');
 const leftBtn = document.querySelector('.arrow.left');
 const rightBtn = document.querySelector('.arrow.right');
 const carousel = document.querySelector('.carousel');
