@@ -51,6 +51,13 @@ document.querySelectorAll('.carousel-images img').forEach(img => {
   });
 });
 
+// ✅ clicking the enlarged image switches to the next one
+lightboxImg.addEventListener('click', (e) => {
+  e.stopPropagation(); // prevent closing the lightbox
+  nextImage();
+  lightboxImg.src = imageElements[index].src;
+});
+
 // Close when clicking the X or outside the image
 closeBtn.addEventListener('click', () => lightbox.style.display = 'none');
 lightbox.addEventListener('click', e => {
